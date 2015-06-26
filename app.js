@@ -16,8 +16,9 @@ io.on('connection', function(socket) {
 		console.log("[" + new Date().toUTCString()+"]" + ' User disconnected');
 	});
 
-	socket.on('chat message', function(msg){
-    	io.emit('chat message', msg);
+	socket.on('draw', function(msg){
+		console.log(msg);
+    	io.emit('draw', msg);
   	});
 })
 

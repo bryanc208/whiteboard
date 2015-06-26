@@ -1,5 +1,3 @@
-.wrapper {
-	height: auto;
-	width: auto;
+.board {
 	border: 1px solid black;
 }
